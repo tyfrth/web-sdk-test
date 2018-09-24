@@ -2,7 +2,7 @@
 <head>
     ...
     ...
-    <script type="text/javascript" src="node_modules/ibm-mfp-web-sdk/ibmmfpf.js"></script>
+    <script type="text/javascript" src="/Users/tylerfrith/Desktop/SDK/web_sdk/web-sdk-test/meridian-sdk.js"></script>
 </head>
 
  ## Meridian Web SDK Test
