@@ -1,6 +1,9 @@
 
- <script type="text/javascript" src="/Users/tylerfrith/Desktop/SDK/web_sdk/web-sdk-test/meridian-sdk.js 
-" data-main="index"></script>
+<head>
+    ...
+    ...
+    <script type="text/javascript" src="node_modules/ibm-mfp-web-sdk/ibmmfpf.js"></script>
+</head>
 
  ## Meridian Web SDK Test
 
