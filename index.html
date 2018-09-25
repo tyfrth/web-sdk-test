@@ -38,5 +38,29 @@ var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
 </script>
 <h2>Placemarks</h2>
 
+<script>
+		
+  MeridianSDK.init({
+  api: MeridianSDK.createAPI({
+    environment: "production",
+    token: "6c09d265b1413fc768f4e08447ea95c8923a9c78"
+  })
+});
+var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
+  locationID: "5198682008846336",
+  floorID: "5755685136498688",
+  height: "500px", 
+  placemarks: {
+	filter: placemark => {
+		console.info(placemark)
+		//return tag.mac === "CC78ABA44DAE";
+		 return true;
+	},
+	//disabled: true
+  }
+});
+
+</script>
+
 </body>
 </html>
