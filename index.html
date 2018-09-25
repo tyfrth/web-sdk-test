@@ -25,6 +25,7 @@ var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
   height: "500px", 
   tags: {
 	filter: tag => {
+		console.info(tag)
 		return true;
 	},
 	disabled: true
