@@ -9,7 +9,7 @@
 	<h1>Meridian Web SDK Test</h1>
 <!-- 	<h2>Placemarks</h2>
 	<h2>Tags</h2> -->
-	   <script type="text/javascript" src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script>
+	<script type="text/javascript" src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script>
 	<div id="meridian-map"></div>
 	<script>
 		
@@ -22,7 +22,13 @@
 var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
   locationID: "5198682008846336",
   floorID: "5755685136498688",
-  height: "500px"
+  height: "500px", 
+  tags: {
+	filter: tag => {
+		return true;
+	},
+	disable: true
+  }
 });
 
 	</script>
