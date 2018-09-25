@@ -16,7 +16,7 @@
   MeridianSDK.init({
   api: MeridianSDK.createAPI({
     // environment: "production",
-    token: "6c09d265b1413fc768f4e08447ea95c8923a9c78"
+    token: "c09d265b1413fc768f4e08447ea95c8923a9c78"
   })
 });
 var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
@@ -25,7 +25,7 @@ var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
   height: "500px", 
   tags: {
 	filter: tag => {
-		console.info(tag)
+		// console.info(tag)
 		return tag.mac === "CC78ABA44DAE";
 		// return true;
 	},
