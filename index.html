@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-   <script type="text/javascript" src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script>
     <title>This is a test</title>
 </head>
 
@@ -10,7 +9,9 @@
 	<h1>Meridian Web SDK Test</h1>
 <!-- 	<h2>Placemarks</h2>
 	<h2>Tags</h2> -->
-	<script type="text/javascript">
+	   <script type="text/javascript" src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script>
+	<div id="meridian-map"></div>
+	<script>
 		
   MeridianSDK.init({
   api: MeridianSDK.createAPI({
@@ -26,6 +27,5 @@ var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
 
 	</script>
 
-	<div id="meridian-map"></div>
 </body>
 </html>
