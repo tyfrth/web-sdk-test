@@ -9,11 +9,13 @@
 <body>
 	<h1>Meridian Web SDK Test</h1>
 	<h2>Basic Example</h2>
-	<script src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script>
+	<!-- <script src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script> -->
 	<div id="meridian-map"></div>
 	
 	
 <script>
+
+  var MeridianSDK = require("@meridian/web-sdk");
 		
   MeridianSDK.init({
   api: MeridianSDK.createAPI({
