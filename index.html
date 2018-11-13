@@ -3,22 +3,17 @@
 <html lang="en-US">
 <head>
     <title>This is a test</title>
-    <!-- <script src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script> -->
 </head>
 
 <body>
 	<h1>Meridian Web SDK Test</h1>
 	<h2>Basic Example</h2>
-	<!-- <script src="https://arubanetworks.github.io/meridian-web-sdk/--SECRET--/meridian-sdk.js"></script> -->
 	<div id="meridian-map"></div>
  
-<!-- <script>var MeridianSDK = require("@meridian/web-sdk");</script> -->
+ //just using standalone .js file
 <script src="meridian-sdk.js"></script>
 	
 <script>
-
-  //var MeridianSDK = require("@meridian/web-sdk");
-  //var MeridianSDK = require("./meridian/web-sdk");
 
 console.info("heyooooooo");
 		
@@ -45,32 +40,6 @@ var map = MeridianSDK.createMap(element,  {
 });
 
 </script>
-
-<!-- <h2>Placemarks</h2> -->
-
-<!-- <script>
-		
-  MeridianSDK.init({
-  api: MeridianSDK.createAPI({
-    environment: "production",
-    token: "6c09d265b1413fc768f4e08447ea95c8923a9c78"
-  })
-});
-var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
-  locationID: "5198682008846336",
-  floorID: "5755685136498688",
-  height: "500px", 
-  placemarks: {
-	filter: placemark => {
-		console.info(placemark)
-		//return tag.mac === "CC78ABA44DAE";
-		 return true;
-	},
-	//disabled: true
-  }
-});
-
-</script> -->
 
 </body>
 </html>
