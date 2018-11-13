@@ -17,7 +17,7 @@
 	
 <script>
 
-  var MeridianSDK = require("@meridian/web-sdk");
+  //var MeridianSDK = require("@meridian/web-sdk");
   //var MeridianSDK = require("./meridian/web-sdk");
 		
   MeridianSDK.init({
@@ -27,18 +27,20 @@
   })
 });
 
-var map = MeridianSDK.createMap(document.getElementById("meridian-map"), {
+var element = document.getElementById("meridian-map");
+var map = MeridianSDK.createMap(element,  {
   locationID: "5198682008846336",
   floorID: "5755685136498688",
-  height: "500px", 
-  tags: {
-	filter: tag => {
-		console.info(tag)
-		//return tag.mac === "CC78ABA44DAE";
-		 return true;
-	},
-	//disabled: true
-  }
+  height: "500px",
+  console.info("heyooooooo"),
+ //  tags: {
+	// // filter: tag => {
+	// // 	console.info(tag)
+	// // 	//return tag.mac === "CC78ABA44DAE";
+	// // 	 return true;
+	// // },
+	// //disabled: true
+ //  }
 });
 
 </script>
